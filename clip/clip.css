@@ -1,0 +1,198 @@
+* {
+  --bgColor: #131415;
+  --clipBgColor: #18191D;
+  --clipItemsColor: #373A46;
+  --clipItemContainerColor: #24252D;
+  /*
+    This is an example of how to use MotorCortex's init params in css, using a css variable
+      if you are unfamiliar with css variables here is a quick guide https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties#basic_usage
+  */
+}
+
+.container {
+display: flex;
+justify-content: center;
+flex-direction: row;
+align-items: center;
+height: 100%;
+background-color: var(--bgColor);
+}
+
+.clip-wrapper{
+  background-color: var(--clipBgColor);
+  width: 780px;
+  height: 780px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 75px;
+  position: absolute;
+  transform: scale(0);
+}
+
+.clip-wrapper .item{
+  position: relative;
+}
+
+.clip-wrapper .item .image-wrapper{
+  height: 160px;
+  width: 160px;
+  border-radius: 30px;
+  background-color: var(--clipItemsColor);
+  position: relative;
+  top: 0;
+  left: 0px;
+  transform: scale(0);
+}
+
+.clip-wrapper .image-wrapper .image{
+  height: 160px;
+  width: 160px;
+  border-radius: 30px;
+  opacity: 0;
+}
+
+.content-wrapper{
+  height: 160px;
+  width: 0px;
+  background: var(--clipItemContainerColor);
+  border-radius: 30px;
+  position: absolute  ;
+  top: 0; 
+  left: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 18px;
+}
+
+.line{
+  height: 20px;
+  width: 0px;
+  background-color: var(--clipItemsColor);
+  border-radius: 30px;
+  position: relative;
+  left: 180px;
+}
+
+/*Dynamic*/
+.d-wrapper{
+  position: absolute;
+  top: 200px;
+  right: 170px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
+
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 62px;
+  letter-spacing: 0.0048em;
+  color: #FFFFFF;
+  }
+
+.box{
+  background: var(--clipItemContainerColor);
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 15px;
+  border-radius: 30px;
+  transform: scale(0);
+}
+
+.d-item{
+  height: 110px;
+  width: 110px;
+  border-radius: 30px;
+  opacity: 0;
+}
+
+.d-item.item1,.clip-wrapper .item1 .image{
+  background: url("assets/f2.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.d-item.item2,.clip-wrapper .item2 .image{
+  background: url("assets/f1.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.d-item.item3,.clip-wrapper .item3 .image{
+  background: url("assets/f3.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.d-title,.p-title{
+  opacity: 0;
+}
+
+
+/*personalized*/
+.p-wrapper{
+  position: absolute;
+  top: 600px;
+  right: 170px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
+
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 62px;
+  letter-spacing: 0.0048em;
+  color: #FFFFFF;
+  overflow: hidden;
+  }
+
+  .p-box{
+    gap: 35px;
+    padding: 0px;
+  }
+
+  .p-item{
+    height: 80px;
+    width: 80px;
+    background-color: red;
+    border-radius: 30px;
+    border: 15px solid var(--clipItemContainerColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  svg{
+    scale: 0.8 ;
+  }
+
+  .p-item{
+    position: relative;
+    left:100%;
+    opacity: 0;
+  }
+
+  .blue{
+    background: #47E2FF;
+  }
+
+  .purple{
+    background: #BF59FF;
+  }
+
+  .pink{
+    background: #F761A1;
+  }
+
+  .cw{
+    opacity: 0;
+  }

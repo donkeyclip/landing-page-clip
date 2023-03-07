@@ -8,7 +8,6 @@ import { left } from "./effects/left";
 
 import initParams from "./initParams";
 import initParamsValidationRules from "./initParamsValidationRules";
-import { bgColor } from "./effects/bgColor";
 
 const clip = new HTMLClip({
   html,

@@ -115,17 +115,17 @@ background-color: var(--bgColor);
 }
 
 .d-item.item1,.clip-wrapper .item1 .image{
-  background: url("https://donkeyclip.github.io/landing-page-clip/server/assets/f2.jpg");
+  background: url("https://donkeyclip.github.io/landing-page-clip/server/assets/f2s.jpg");
   background-position: center;
   background-size: cover;
 }
 .d-item.item2,.clip-wrapper .item2 .image{
-  background: url("https://donkeyclip.github.io/landing-page-clip/server/assets/f1.jpg");
+  background: url("https://donkeyclip.github.io/landing-page-clip/server/assets/f1s.jpg");
   background-position: center;
   background-size: cover;
 }
 .d-item.item3,.clip-wrapper .item3 .image{
-  background: url("https://donkeyclip.github.io/landing-page-clip/server/assets/f3.jpg");
+  background: url("https://donkeyclip.github.io/landing-page-clip/server/assets/f3s.jpg");
   background-position: center;
   background-size: cover;
 }

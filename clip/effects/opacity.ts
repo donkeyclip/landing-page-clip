@@ -1,15 +1,23 @@
 import { CSSEffect } from "@donkeyclip/motorcortex";
-export const opacity = (opacity,selector, duration, easing = "linear", delay=0) =>
+export const opacity = (
+  opacity,
+  selector,
+  duration,
+  easing = "linear",
+  delay = 0,
+  initialValues = undefined
+) =>
   new CSSEffect(
     {
       animatedAttrs: {
-        opacity
+        opacity,
       },
+      ...(initialValues && { initialValues: { opacity: initialValues } }),
     },
     {
       selector,
       duration,
       easing,
-      delay
+      delay,
     }
   );
